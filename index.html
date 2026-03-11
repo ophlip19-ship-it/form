@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+
+<body
+    class="bg-[url(bg-intro-mobile.png)] lg:my-auto  lg:bg-[url(bg-intro-desktop.png)] bg-cover bg-no-repeat bg-[#ff7a7a] mx-auto w-[90%] lg:w-[80%] lg:flex lg:flex-col lg:items-center ">
+    <div class="flex flex-col lg:flex-row  items-center lg:items-start lg:my-auto lg:w-[90%] mx-auto  ">
+        <div class="flex flex-col w-[80%] mx-auto lg:w-[50%] lg:my-auto ">
+            <h2 class="text-3xl font-bold lg:text-4xl lg:w-[50vh]   text-white my-[1vh]  text-center mx-auto ">Learn to
+                code by watching others</h2>
+            <p class="text-white font-bold my-[1vh] text-center ">See how experienced developers solve problems in
+                real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+            </p>
+        </div>
+        <div class="flex flex-col items-center lg:items-center lg:my-auto lg:w-[50%] lg:mt-[7vh]   ">
+            <button
+                class="bg-[#6055a5] flex justify-center w-[80%] mx-auto px-[10px] py-[30px] text-white rounded-[20px] "><strong
+                    class="mr-[5px] ">Try it free 7 days </strong>
+                then $20/mo. thereafter</button>
+            <Form
+                class="flex flex-col gap-[2vh] bg-white w-[80%] mx-auto my-[5vh] lg:my-[3vh]  p-[20px] rounded-[10px] shadow-box[0 4px 4px]  "
+                id="myForm">
+                <input type="text" name="" id="firstName" placeholder="First Name"
+                    class="border rounded-[5px] p-[10px] text-500">
+                <p id="firstPara"></p>
+                <input type="text" name="" id="lastName" placeholder="last Name"
+                    class="border rounded-[5px] p-[10px] text-500">
+                <p id="lastPara"></p>
+                <input type="email" name="" id="email" placeholder="Email address"
+                    class="border rounded-[5px] p-[10px] text-500">
+                <p id="emailPara"></p>
+                <input type="password" name="" id="password" placeholder="password"
+                    class="border rounded-[5px] p-[10px] text-500">
+                <p id="passPara"></p>
+                <button id="submit" class="bg-[#38cc8c]  rounded-[5px] p-[10px] text-500 text-white text-700 "> CLAIM
+                    YOUR FREE
+                    TRIAL</button>
+                <p class="">By clicking the button, you are agreeing to our <strong class="text-[#ff7a7a] ">Terms and
+                        Services</strong>
+                </p>
+
+            </Form>
+        </div>
+
+    </div>
+
+    <p id="successMessage" class=" block text-green-500 text-center my-4 lg:text-lg"></p>
+    <script src="main.js"></script>
+</body>
+
+</html>
